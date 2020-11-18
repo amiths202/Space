@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Space</string>
+    <string name="background">background</string>
+    <string name="logo">Logo</string>
+    <string name="login">Login</string>
+    <string name="abc_email_com">abc@email.com</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="kira2_deathnote_com">kira2@deathnote.com</string>
+    <string name="light_yagami">Light Yagami</string>
+    <string name="registration">Registration</string>
+    <string name="register">Register</string>
+    <string name="here_s_few_things_you_can_do">Here\'s few things you can do</string>
+    <string name="welcome">Welcome</string>
+    <string name="view_user_details">View user details</string>
+    <string name="register_new_users">Register new users</string>
+    <string name="update_user_details">Update User Details</string>
+    <string name="delete_users">Delete Users</string>
+    <string name="not_registered_click_here">Not Registered? Click here</string>
+    <string name="registration_image">Registration Image</string>
+    <string name="confirm">Confirm</string>
+    <string name="DescriptionDelete">Please enter the email associated with the user you wish to delete</string>
+    <string name="hi_welcome">Hi! Welcome</string>
+</resources>

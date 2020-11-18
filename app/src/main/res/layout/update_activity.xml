@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdatePage">
+    <LinearLayout
+        android:padding="5dp"
+        android:background="@color/light_grey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+        <ImageButton
+            android:id="@+id/backButtonUpdate"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:src="@drawable/back_press"/>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="?actionBarSize"
+            android:layout_weight="8"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="30dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:textColor="@color/teal_700"
+        android:textStyle="bold"
+        android:textSize="45sp"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please enter the correct email associated with the user you wish to update"/>
+
+    <EditText
+        android:id="@+id/userEmailUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="kira_old@deathnote.com"
+        android:inputType="textEmailAddress"
+        android:singleLine="true" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/verifyUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verify Email"
+            android:layout_margin="5dp"/>
+        <TextView
+            android:id="@+id/reportUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAlignment="center"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+    <EditText
+        android:id="@+id/userEmailNewUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="kira_new@deathnote.com"
+        android:inputType="textEmailAddress"
+        android:singleLine="true"
+        android:enabled="false"/>
+    <EditText
+        android:id="@+id/userNameUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Updated Name"
+        android:singleLine="true"
+        android:enabled="false"/>
+    <EditText
+        android:id="@+id/userPasswordUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="New Password"
+        android:singleLine="true"
+        android:inputType="textPassword"
+        android:enabled="false"/>
+    <Button
+        android:id="@+id/dataUpdate"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:text="UPDATE"
+        android:textStyle="bold"
+        android:enabled="false"/>
+
+    <ImageView
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/update"/>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DeletePage">
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:background="@color/light_grey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+            <ImageButton
+                android:id="@+id/backButtonDelete"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:src="@drawable/back_press"/>
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="?actionBarSize"
+                android:layout_weight="8"/>
+        </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete User  "
+        android:textColor="@color/red_danger"
+        android:textStyle="bold"
+        android:textSize="45sp"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/DescriptionDelete"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/userEmailDelete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="kira2@deathnote.com"
+            android:inputType="textEmailAddress"
+            android:layout_weight="0.80"
+            android:layout_marginLeft="5dp"
+            android:singleLine="true" />
+        <ImageButton
+            android:id="@+id/deleteVerify"
+            android:layout_marginTop="20dp"
+            android:layout_width="0dp"
+            android:layout_weight="0.20"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:src="@drawable/user"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/noteDelete"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="15sp"/>
+    <Button
+        android:id="@+id/buttonDelete"
+        android:layout_marginTop="5dp"
+        android:text="Confirm Delete"
+        android:enabled="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/delete_ico"/>
+
+</LinearLayout>
+</LinearLayout>
